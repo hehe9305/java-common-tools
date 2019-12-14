@@ -17,7 +17,7 @@ public class CheckUtilsTest {
         Assert.assertEquals(CheckUtils.isEmpty(new Object[]{null, null}), true);
         Assert.assertEquals(CheckUtils.isEmpty(new Object[]{null, ""}), true);
         Assert.assertEquals(CheckUtils.isEmpty(new Object[]{"", ""}), true);
-        Assert.assertEquals(CheckUtils.isEmpty(new Object[]{"123", 123, 'a'}), true);
+        Assert.assertEquals(CheckUtils.isEmpty(new Object[]{"123", 123, 'a'}), false);
     }
 
     @Test
